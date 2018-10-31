@@ -1,16 +1,19 @@
 <html>
   <head>
     <title>Thermostat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <section>
       <h1 id="temperature"></h1>
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
+        <button class="btn btn-danger" id="temperature-down">-</button>
+        <button class="btn btn-success" id="temperature-up">+</button>
+        <button class="btn btn-secondary" id="temperature-reset">reset</button>
+        <br>
         power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving">toggle PSM</button>
+        <button class="btn btn-dark" id="powersaving">toggle PSM</button>
       </p>
     </section>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
